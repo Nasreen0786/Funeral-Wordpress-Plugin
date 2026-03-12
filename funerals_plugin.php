@@ -1,41 +1,11 @@
 <?php
-
-
-
 /**
-
-
-
 * Plugin Name: critters
-
-
-
 * Plugin URI: https://www.example.com/
-
-
-
-* Description: UserWhoPurchasePlugin
-
-
-
-* Version: 1.0
-
-
-
-* Author: critters
-
-
-
-* Author URI: https://clientside.com/
-
-
-
+* Description: A WordPress plugin to manage memorial entries, condolence messages, and tribute pages with customizable settings.
+* Version: 1.1
+* Author: Nasreen Shah
 **/
-
-
-
-
-
 
 
 define( 'ARFC_BASEPATH', plugin_dir_path( __FILE__ ) ); //plugin path
@@ -645,6 +615,7 @@ function critters_page(){
 
 
     $newvalue1 = wp_insert_post( $my_post1, false );
+
     update_option( 'vidpage1', $newvalue1 );
 }
 
